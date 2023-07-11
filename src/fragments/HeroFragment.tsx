@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 
 const HeroFragment = () => {
   return (
-    <Box mx="125px" display="flex" justifyContent="center" alignItems="center" height="100vh">
+    <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
       <Box backdropFilter="auto" backdropBlur="5px" w="full" minH="455px" boxShadow="lg" borderRadius="md">
         <Flex justifyContent="center">
           <VStack>

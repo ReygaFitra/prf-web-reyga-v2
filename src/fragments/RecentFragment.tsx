@@ -3,7 +3,7 @@ import { Box, Heading, Card, CardBody, Divider, Text, CardHeader } from '@chakra
 
 const RecentFragment = () => {
   return (
-    <Box bgColor="#0E2954" px="125px" py="5px">
+    <Box bgColor="#0E2954" px="115px" py="5px">
       <Heading size="lg" color="#ECF8F9" py="35px">
         Recently Post Section
       </Heading>

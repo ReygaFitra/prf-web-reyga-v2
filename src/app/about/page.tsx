@@ -9,10 +9,8 @@ export const metadata = {
 
 export default function About() {
   return (
-    <main>
-      <Container minWidth="4xl">
-        <SkillsFragment />
-      </Container>
-    </main>
+    <Container minWidth="6xl">
+      <SkillsFragment />
+    </Container>
   );
 }
