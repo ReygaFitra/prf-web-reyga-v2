@@ -1,3 +1,7 @@
+'use client';
+import HeroFragment from '@/fragments/HeroFragment';
+import RecentFragment from '@/fragments/RecentFragment';
+
 export const metadata = {
   title: 'Reyga Fitra Ramadhan',
   description: `Reyga's Personal Website`,
@@ -5,8 +9,9 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main>
-      <div>Main Section</div>
+    <main className="main-layer">
+      <HeroFragment />
+      <RecentFragment />
     </main>
   );
 }

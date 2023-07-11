@@ -5,4 +5,13 @@
   padding: 0;
   margin: 0;
   font-family: 'Changa', sans-serif;
+  /* background-color: #222222; */
+}
+
+.main-layer {
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#22a39f 1.7000000000000002px, #ffffff 1.7000000000000002px);
+  background-size: 34px 34px;
+  min-height: 100vh;
 }
