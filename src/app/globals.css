@@ -9,9 +9,7 @@
 }
 
 .main-layer {
-  background-color: #ffffff;
-  opacity: 1;
-  background-image: radial-gradient(#22a39f 1.7000000000000002px, #ffffff 1.7000000000000002px);
-  background-size: 34px 34px;
+  background-image: radial-gradient(#4e4feb 2px, transparent 2px);
+  background-size: 54px 54px;
   min-height: 100vh;
 }

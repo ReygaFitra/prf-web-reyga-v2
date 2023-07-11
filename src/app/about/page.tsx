@@ -1,3 +1,7 @@
+'use client';
+import SkillsFragment from '@/fragments/SkillsFragment';
+import { Container } from '@chakra-ui/react';
+
 export const metadata = {
   title: 'Reyga Fitra Ramadhan | About',
   description: `About Page`,
@@ -5,8 +9,10 @@ export const metadata = {
 
 export default function About() {
   return (
-    <div>
-      <h1>About</h1>
-    </div>
+    <main>
+      <Container minWidth="4xl">
+        <SkillsFragment />
+      </Container>
+    </main>
   );
 }

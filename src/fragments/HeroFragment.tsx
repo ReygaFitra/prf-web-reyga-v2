@@ -8,10 +8,10 @@ const HeroFragment = () => {
       <Box backdropFilter="auto" backdropBlur="5px" w="full" minH="455px" boxShadow="lg" borderRadius="md">
         <Flex justifyContent="center">
           <VStack>
-            <Heading color="#22a39f">Heading</Heading>
-            <Text color="#22a39f">Hero Section</Text>
+            <Heading color="#4E4FEB">Heading</Heading>
+            <Text color="#068FFF">Hero Section</Text>
             <NextLink href="/about">
-              <Button variant="outline" size="md" alignItems="center" color="#22A39F" borderRadius="sm">
+              <Button variant="outline" size="md" alignItems="center" color="#4E4FEB" borderRadius="sm">
                 About
               </Button>
             </NextLink>

@@ -1,44 +1,47 @@
 'use client';
-import { Box, Heading, Card, CardBody, Divider, Text } from '@chakra-ui/react';
+import { Box, Heading, Card, CardBody, Divider, Text, CardHeader } from '@chakra-ui/react';
 
 const RecentFragment = () => {
   return (
-    <Box bgColor="#222222" px="125px" py="5px">
-      <Heading size="lg" color="#22a39f" py="35px">
+    <Box bgColor="#0E2954" px="125px" py="5px">
+      <Heading size="lg" color="#ECF8F9" py="35px">
         Recently Post Section
       </Heading>
-      <Card my="10px">
-        <CardBody>
-          <Heading color="#22a39f">Heading</Heading>
+      <Card my="10px" variant="outline" size="md" bgColor="transparent" _hover={{ bgColor: 'rgba(255, 255, 255, 0.3)', transition: '0.4s' }}>
+        <CardHeader>
+          <Heading color="#ECF8F9" size="lg">
+            CardHeader
+          </Heading>
           <Divider orientation="horizontal" mt="10px" />
-          <Text color="#22a39f" py="25px">
+        </CardHeader>
+        <CardBody>
+          <Text color="#ECF8F9" py="10px">
             Recent Blog
           </Text>
         </CardBody>
       </Card>
-      <Card my="10px">
-        <CardBody>
-          <Heading color="#22a39f">Heading</Heading>
+      <Card my="10px" variant="outline" size="md" bgColor="transparent" _hover={{ bgColor: 'rgba(255, 255, 255, 0.3)', transition: '0.4s' }}>
+        <CardHeader>
+          <Heading color="#ECF8F9" size="lg">
+            CardHeader
+          </Heading>
           <Divider orientation="horizontal" mt="10px" />
-          <Text color="#22a39f" py="25px">
+        </CardHeader>
+        <CardBody>
+          <Text color="#ECF8F9" py="10px">
             Recent Blog
           </Text>
         </CardBody>
       </Card>
-      <Card my="10px">
-        <CardBody>
-          <Heading color="#22a39f">Heading</Heading>
+      <Card my="10px" variant="outline" size="md" bgColor="transparent" _hover={{ bgColor: 'rgba(255, 255, 255, 0.3)', transition: '0.4s' }}>
+        <CardHeader>
+          <Heading color="#ECF8F9" size="lg">
+            CardHeader
+          </Heading>
           <Divider orientation="horizontal" mt="10px" />
-          <Text color="#22a39f" py="25px">
-            Recent Blog
-          </Text>
-        </CardBody>
-      </Card>
-      <Card my="10px">
+        </CardHeader>
         <CardBody>
-          <Heading color="#22a39f">Heading</Heading>
-          <Divider orientation="horizontal" mt="10px" />
-          <Text color="#22a39f" py="25px">
+          <Text color="#ECF8F9" py="10px">
             Recent Blog
           </Text>
         </CardBody>
