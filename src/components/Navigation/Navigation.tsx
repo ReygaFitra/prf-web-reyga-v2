@@ -2,7 +2,7 @@
 import { Flex, HStack, Button, Box } from '@chakra-ui/react';
 import NavigationHeading from './NavigationHeading';
 import NavigationLink from './NavigationLink';
-import NavLinks from '@/_data/NavLinks.json';
+import NavLinks from '@/_data/json/NavLinks.json';
 
 const Navigation = () => {
   return (

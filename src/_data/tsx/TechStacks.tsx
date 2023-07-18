@@ -169,3 +169,22 @@ export const TechStacks = [
     ],
   },
 ];
+
+export const Stacks = [
+  {
+    id: 1,
+    name: 'Languages',
+  },
+  {
+    id: 2,
+    name: 'Frontend',
+  },
+  {
+    id: 3,
+    name: 'Backend',
+  },
+  {
+    id: 4,
+    name: 'Misc.',
+  },
+];

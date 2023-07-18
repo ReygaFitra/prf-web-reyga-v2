@@ -1,7 +1,7 @@
 'use client';
 import { TabList, Tabs, Tab, TabPanels, TabPanel, TabIndicator, Grid, GridItem, Heading, HStack } from '@chakra-ui/react';
 import { useState } from 'react';
-import { TechStacks } from '@/_data/TechStacks';
+import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
 
 const SkillsFragment = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -17,10 +17,11 @@ const SkillsFragment = () => {
       </Heading>
       <Tabs isFitted variant="unstyled" index={activeTab} onChange={handleTabChange}>
         <TabList>
-          <Tab _selected={{ color: '#4E4FEB' }}>Language</Tab>
-          <Tab _selected={{ color: '#4E4FEB' }}>Frontend</Tab>
-          <Tab _selected={{ color: '#4E4FEB' }}>Backend</Tab>
-          <Tab _selected={{ color: '#4E4FEB' }}>Misc.</Tab>
+          {Stacks.map((stack) => (
+            <Tab key={stack.id} _selected={{ color: '#4E4FEB' }}>
+              {stack.name}
+            </Tab>
+          ))}
         </TabList>
         <TabIndicator mt="-1.5px" height="2px" bg="#4E4FEB" borderRadius="1px" />
 
