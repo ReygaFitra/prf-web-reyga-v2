@@ -5,13 +5,6 @@ import NextLink from 'next/link';
 import { Github, Linkedin, Instagram, Copyright } from 'lucide-react';
 
 const Footer = () => {
-  const HorizontalDivider = () => {
-    return <Box w="100%" h="3px" bg="#4E4FEB" />;
-  };
-  const VerticalDivider = () => {
-    return <Box h="100%" w="3px" bg="#4E4FEB" />;
-  };
-
   return (
     <Box px="125px" py="20px">
       <VStack>
