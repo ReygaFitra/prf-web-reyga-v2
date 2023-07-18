@@ -1,8 +1,8 @@
 'use client';
-import Navigation from '@/components/Navigation';
 import './globals.css';
 import { ChakraProvider } from '@chakra-ui/react';
-import Footer from '@/components/Footer';
+import Navigation from '@/components/Navigation/Navigation';
+import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
   title: 'Reyga Fitra Ramadhan',
