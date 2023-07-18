@@ -174,34 +174,6 @@ const SkillsFragment = () => {
     },
   ];
 
-  const languages = [
-    {
-      id: 1,
-      name: 'HTML',
-      icon: HtmlIcon,
-    },
-    {
-      id: 2,
-      name: 'CSS',
-      icon: CssIcon,
-    },
-    {
-      id: 3,
-      name: 'JavaScript',
-      icon: JavascriptIcon,
-    },
-    {
-      id: 4,
-      name: 'Typescript',
-      icon: TypescriptIcon,
-    },
-    {
-      id: 5,
-      name: 'Golang',
-      icon: GolangIcon,
-    },
-  ];
-
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (index: number) => {
@@ -209,32 +181,39 @@ const SkillsFragment = () => {
   };
 
   return (
-    <Tabs isFitted variant="unstyled" index={activeTab} onChange={handleTabChange}>
-      <TabList>
-        <Tab _selected={{ color: '#4E4FEB' }}>Language</Tab>
-        <Tab _selected={{ color: '#4E4FEB' }}>Frontend</Tab>
-        <Tab _selected={{ color: '#4E4FEB' }}>Backend</Tab>
-        <Tab _selected={{ color: '#4E4FEB' }}>Misc.</Tab>
-      </TabList>
-      <TabIndicator mt="-1.5px" height="2px" bg="#4E4FEB" borderRadius="1px" />
+    <>
+      <Heading size="lg" color="#4E4FEB" py="35px" fontFamily="Changa">
+        Technology & Stack
+      </Heading>
+      <Tabs isFitted variant="unstyled" index={activeTab} onChange={handleTabChange}>
+        <TabList>
+          <Tab _selected={{ color: '#4E4FEB' }}>Language</Tab>
+          <Tab _selected={{ color: '#4E4FEB' }}>Frontend</Tab>
+          <Tab _selected={{ color: '#4E4FEB' }}>Backend</Tab>
+          <Tab _selected={{ color: '#4E4FEB' }}>Misc.</Tab>
+        </TabList>
+        <TabIndicator mt="-1.5px" height="2px" bg="#4E4FEB" borderRadius="1px" />
 
-      <TabPanels bgColor="#0E2954" my="10px" borderRadius="md" p="15px" minH="60vh">
-        {skillsPanels.map((panel) => (
-          <TabPanel key={panel.id} color="#ECF8F9">
-            <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-              {panel.panelData.map((data) => (
-                <GridItem key={data.id}>
-                  <HStack p="20px" rounded="sm" _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF', bgColor: 'rgba(255, 255, 255, 0.2)' }}>
-                    <data.icon />
-                    <Heading size="lg">{data.name}</Heading>
-                  </HStack>
-                </GridItem>
-              ))}
-            </Grid>
-          </TabPanel>
-        ))}
-      </TabPanels>
-    </Tabs>
+        <TabPanels bgColor="#0E2954" my="10px" borderRadius="md" p="15px" minH="60vh">
+          {skillsPanels.map((panel) => (
+            <TabPanel key={panel.id} color="#ECF8F9">
+              <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+                {panel.panelData.map((data) => (
+                  <GridItem key={data.id}>
+                    <HStack p="20px" rounded="sm" _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF', bgColor: 'rgba(255, 255, 255, 0.2)' }}>
+                      <data.icon />
+                      <Heading size="lg" fontFamily="Changa" fontWeight="light">
+                        {data.name}
+                      </Heading>
+                    </HStack>
+                  </GridItem>
+                ))}
+              </Grid>
+            </TabPanel>
+          ))}
+        </TabPanels>
+      </Tabs>
+    </>
   );
 };
 
