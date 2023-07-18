@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "About",
+    "href": "/about",
+    "dividerHeight": "25px"
+  },
+  {
+    "id": 2,
+    "title": "Projects",
+    "href": "/projects",
+    "dividerHeight": "25px"
+  },
+  {
+    "id": 1,
+    "title": "Blog",
+    "href": "/blog",
+    "dividerHeight": "25px"
+  },
+  {
+    "id": 1,
+    "title": "Dashboard",
+    "href": "/dashboard",
+    "dividerHeight": "25px"
+  }
+]
