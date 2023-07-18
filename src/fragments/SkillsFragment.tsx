@@ -3,6 +3,7 @@ import { TabList, Tabs, Tab, TabPanels, TabPanel, TabIndicator, Grid, GridItem, 
 import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
 import { HorizontalDivider } from '@/components/Divider/CustomDivider';
+import TitleSection from '@/components/Title/TitleSection';
 
 const SkillsFragment = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,12 +14,7 @@ const SkillsFragment = () => {
 
   return (
     <>
-      <Box w="280px">
-        <Heading size="lg" color="#4E4FEB" py="15px" fontFamily="Changa">
-          Technology & Stack
-        </Heading>
-        <HorizontalDivider width="100%" height="3px" color="#4E4FEB" />
-      </Box>
+      <TitleSection width="280px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Technology & Stack" dividerColor="#4E4FEB" />
 
       <Tabs isFitted variant="unstyled" index={activeTab} onChange={handleTabChange} my="20px">
         <TabList>
