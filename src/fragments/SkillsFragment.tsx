@@ -26,6 +26,182 @@ import FigmaIcon from '@/assets/svg/figma.svg';
 import ArduinoIcon from '@/assets/svg/arduino.svg';
 
 const SkillsFragment = () => {
+  const skillsPanels = [
+    {
+      id: 1,
+      panelData: [
+        {
+          id: 1,
+          name: 'HTML',
+          icon: HtmlIcon,
+        },
+        {
+          id: 2,
+          name: 'CSS',
+          icon: CssIcon,
+        },
+        {
+          id: 3,
+          name: 'JavaScript',
+          icon: JavascriptIcon,
+        },
+        {
+          id: 4,
+          name: 'Typescript',
+          icon: TypescriptIcon,
+        },
+        {
+          id: 5,
+          name: 'Golang',
+          icon: GolangIcon,
+        },
+      ],
+    },
+    {
+      id: 2,
+      panelData: [
+        {
+          id: 1,
+          name: 'React JS',
+          icon: ReactIcon,
+        },
+        {
+          id: 2,
+          name: 'Next JS',
+          icon: NextIcon,
+        },
+        {
+          id: 3,
+          name: 'TailwindCSS',
+          icon: TailwindIcon,
+        },
+        {
+          id: 4,
+          name: 'Chakra UI',
+          icon: ChakraIcon,
+        },
+        {
+          id: 5,
+          name: 'Radix UI',
+          icon: RadixuiIcon,
+        },
+        {
+          id: 6,
+          name: 'Framer Motion',
+          icon: FramerMotionIcon,
+        },
+      ],
+    },
+    {
+      id: 3,
+      panelData: [
+        {
+          id: 1,
+          name: 'Node JS',
+          icon: NodejsIcon,
+        },
+        {
+          id: 2,
+          name: 'Express JS',
+          icon: ExpressIcon,
+        },
+        {
+          id: 3,
+          name: 'PostgreSQL',
+          icon: PostgresIcon,
+        },
+        {
+          id: 4,
+          name: 'MySQL',
+          icon: MysqlIcon,
+        },
+        {
+          id: 5,
+          name: 'MongoDB',
+          icon: MongodbIcon,
+        },
+        {
+          id: 6,
+          name: 'Gin Golang',
+          icon: GoIcon,
+        },
+        {
+          id: 7,
+          name: 'GORM',
+          icon: GoIcon,
+        },
+        {
+          id: 8,
+          name: 'Prisma',
+          icon: PrismaIcon,
+        },
+        {
+          id: 9,
+          name: 'Firebase',
+          icon: FirebaseIcon,
+        },
+      ],
+    },
+    {
+      id: 4,
+      panelData: [
+        {
+          id: 1,
+          name: 'GIT',
+          icon: GitIcon,
+        },
+        {
+          id: 2,
+          name: 'VS Code',
+          icon: VscodeIcon,
+        },
+        {
+          id: 3,
+          name: 'Figma',
+          icon: FigmaIcon,
+        },
+        {
+          id: 4,
+          name: 'Arduino',
+          icon: ArduinoIcon,
+        },
+        {
+          id: 5,
+          name: 'IoT',
+          icon: ArduinoIcon,
+        },
+      ],
+    },
+  ];
+
+  const languages = [
+    {
+      id: 1,
+      name: 'HTML',
+      icon: HtmlIcon,
+    },
+    {
+      id: 2,
+      name: 'CSS',
+      icon: CssIcon,
+    },
+    {
+      id: 3,
+      name: 'JavaScript',
+      icon: JavascriptIcon,
+    },
+    {
+      id: 4,
+      name: 'Typescript',
+      icon: TypescriptIcon,
+    },
+    {
+      id: 5,
+      name: 'Golang',
+      icon: GolangIcon,
+    },
+  ];
+
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (index: number) => {
@@ -41,173 +217,22 @@ const SkillsFragment = () => {
         <Tab _selected={{ color: '#4E4FEB' }}>Misc.</Tab>
       </TabList>
       <TabIndicator mt="-1.5px" height="2px" bg="#4E4FEB" borderRadius="1px" />
-      <TabPanels bgColor="#0E2954" my="10px" borderRadius="md" p="15px">
-        <TabPanel color="#ECF8F9">
-          <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <HtmlIcon />
-                <Heading size="lg">HTML</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <CssIcon />
-                <Heading size="lg">CSS</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <JavascriptIcon />
-                <Heading size="lg">JavaScript</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <TypescriptIcon />
-                <Heading size="lg">TypeScript</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <GolangIcon />
-                <Heading size="lg">Golang</Heading>
-              </HStack>
-            </GridItem>
-          </Grid>
-        </TabPanel>
-        <TabPanel color="#ECF8F9">
-          <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <ReactIcon />
-                <Heading size="lg">ReactJS</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <NextIcon />
-                <Heading size="lg">NextJS</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <TailwindIcon />
-                <Heading size="lg">TailwindCSS</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <ChakraIcon />
-                <Heading size="lg">ChakraUI</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <RadixuiIcon />
-                <Heading size="lg">Radix UI</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <FramerMotionIcon />
-                <Heading size="lg">Framer Motion</Heading>
-              </HStack>
-            </GridItem>
-          </Grid>
-        </TabPanel>
-        <TabPanel color="#ECF8F9">
-          <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <NodejsIcon />
-                <Heading size="lg">NodeJS</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <ExpressIcon />
-                <Heading size="lg">Express</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <PostgresIcon />
-                <Heading size="lg">PostgreSQL</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <MysqlIcon />
-                <Heading size="lg">MySQL</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <MongodbIcon />
-                <Heading size="lg">MongoDB</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <GoIcon />
-                <Heading size="lg">GIN Golang</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <GoIcon />
-                <Heading size="lg">Gorm</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <PrismaIcon />
-                <Heading size="lg">Prisma</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <FirebaseIcon />
-                <Heading size="lg">Firebase</Heading>
-              </HStack>
-            </GridItem>
-          </Grid>
-        </TabPanel>
-        <TabPanel color="#ECF8F9">
-          <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <GitIcon />
-                <Heading size="lg">Git</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <VscodeIcon />
-                <Heading size="lg">Visual Studio Code</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <FigmaIcon />
-                <Heading size="lg">Figma</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <ArduinoIcon />
-                <Heading size="lg">Arduino</Heading>
-              </HStack>
-            </GridItem>
-            <GridItem>
-              <HStack _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF' }}>
-                <ArduinoIcon />
-                <Heading size="lg">Internet of Things</Heading>
-              </HStack>
-            </GridItem>
-          </Grid>
-        </TabPanel>
+
+      <TabPanels bgColor="#0E2954" my="10px" borderRadius="md" p="15px" minH="60vh">
+        {skillsPanels.map((panel) => (
+          <TabPanel key={panel.id} color="#ECF8F9">
+            <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+              {panel.panelData.map((data) => (
+                <GridItem key={data.id}>
+                  <HStack p="20px" rounded="sm" _hover={{ cursor: 'pointer', transition: '.5s', color: '#068FFF', bgColor: 'rgba(255, 255, 255, 0.2)' }}>
+                    <data.icon />
+                    <Heading size="lg">{data.name}</Heading>
+                  </HStack>
+                </GridItem>
+              ))}
+            </Grid>
+          </TabPanel>
+        ))}
       </TabPanels>
     </Tabs>
   );
