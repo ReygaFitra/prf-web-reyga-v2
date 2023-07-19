@@ -1,6 +1,7 @@
 'use client';
 import BioFragment from '@/fragments/BioFragment';
 import SkillsFragment from '@/fragments/SkillsFragment';
+import TimelineFragment from '@/fragments/TimelineFragment';
 import { Container } from '@chakra-ui/react';
 
 export const metadata = {
@@ -13,6 +14,7 @@ export default function About() {
     <Container minWidth="6xl">
       <BioFragment />
       <SkillsFragment />
+      <TimelineFragment />
     </Container>
   );
 }
