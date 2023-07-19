@@ -1,21 +1,27 @@
 'use client';
 import { Heading } from '@chakra-ui/react';
 import NextLink from 'next/link';
+import { usePathname } from 'next/navigation';
 
 type NavHeading = {
   title: string;
   href: string;
   headingSize: string;
+  activeColor: string;
   headingColor: string;
 };
 
 const NavigationHeading = (props: NavHeading) => {
-  const { href, title, headingSize, headingColor } = props;
+  const { href, title, headingSize, headingColor, activeColor } = props;
+  const pathname = usePathname();
+  const isActive = pathname === href;
 
   return (
-    <Heading size={headingSize} color={headingColor}>
-      <NextLink href={href}>{title}</NextLink>
-    </Heading>
+    <NextLink href={href}>
+      <Heading size={headingSize} color={isActive ? activeColor : headingColor}>
+        {title}
+      </Heading>
+    </NextLink>
   );
 };
 
