@@ -1,4 +1,5 @@
 'use client';
+import Hero from '@/components/Hero/Hero';
 import { Text, Heading, Flex, VStack, Box, Button } from '@chakra-ui/react';
 import NextLink from 'next/link';
 
@@ -6,17 +7,7 @@ const HeroFragment = () => {
   return (
     <Box display="flex" justifyContent="center" alignItems="center" height="100vh">
       <Box backdropFilter="auto" backdropBlur="5px" w="full" minH="455px" boxShadow="lg" borderRadius="md">
-        <Flex justifyContent="center">
-          <VStack>
-            <Heading color="#4E4FEB">Heading</Heading>
-            <Text color="#068FFF">Hero Section</Text>
-            <NextLink href="/about">
-              <Button variant="outline" size="md" alignItems="center" color="#4E4FEB" borderRadius="sm">
-                About
-              </Button>
-            </NextLink>
-          </VStack>
-        </Flex>
+        <Hero name="Reyga Fitra Ramadhan" nameColor="#4E4FEB" nameFont="Changa" roleColor="#068FFF" roleSequence={['Software Engineer', 3000, 'Fullstack Developer', 3000]} />
       </Box>
     </Box>
   );
