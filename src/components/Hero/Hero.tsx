@@ -1,7 +1,8 @@
 'use client';
-import { Text, Heading, Flex, VStack, Button } from '@chakra-ui/react';
-import NextLink from 'next/link';
+import { Text, Heading, Flex, VStack } from '@chakra-ui/react';
+
 import { TypeAnimation } from 'react-type-animation';
+import ButtonLink from '../ButtonLink/ButtonLink';
 
 type Hero = {
   name: string;
@@ -23,11 +24,7 @@ const Hero = (props: Hero) => {
         <Text color={roleColor}>
           <TypeAnimation sequence={roleSequence} style={{ fontSize: '1.5em' }} repeat={Infinity} />
         </Text>
-        <NextLink href="/about">
-          <Button variant="outline" size="md" alignItems="center" color="#4E4FEB" borderRadius="sm">
-            About
-          </Button>
-        </NextLink>
+        <ButtonLink href="/about" color="#4E4FEB" variant="outline" size="md" title="About Me" radius="sm" />
       </VStack>
     </Flex>
   );
