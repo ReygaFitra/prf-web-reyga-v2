@@ -12,13 +12,13 @@
     "dividerHeight": "25px"
   },
   {
-    "id": 1,
+    "id": 3,
     "title": "Blog",
     "href": "/blog",
     "dividerHeight": "25px"
   },
   {
-    "id": 1,
+    "id": 4,
     "title": "Dashboard",
     "href": "/dashboard",
     "dividerHeight": "25px"

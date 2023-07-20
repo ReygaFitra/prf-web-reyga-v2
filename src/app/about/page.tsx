@@ -1,6 +1,7 @@
 'use client';
 import BioFragment from '@/fragments/BioFragment';
 import SkillsFragment from '@/fragments/SkillsFragment';
+import SocialFragment from '@/fragments/SocialFragment';
 import TimelineFragment from '@/fragments/TimelineFragment';
 import { Container } from '@chakra-ui/react';
 
@@ -15,6 +16,7 @@ export default function About() {
       <BioFragment />
       <SkillsFragment />
       <TimelineFragment />
+      <SocialFragment />
     </Container>
   );
 }
