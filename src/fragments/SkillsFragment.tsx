@@ -2,7 +2,6 @@
 import { TabList, Tabs, Tab, TabPanels, TabPanel, TabIndicator, Grid, GridItem, Heading, HStack, Box } from '@chakra-ui/react';
 import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
-import { HorizontalDivider } from '@/components/Divider/CustomDivider';
 import TitleSection from '@/components/Title/TitleSection';
 
 const SkillsFragment = () => {

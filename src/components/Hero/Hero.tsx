@@ -24,7 +24,7 @@ const Hero = (props: Hero) => {
         <Text color={roleColor}>
           <TypeAnimation sequence={roleSequence} style={{ fontSize: '1.5em' }} repeat={Infinity} />
         </Text>
-        <ButtonLink href="/about" color="#4E4FEB" variant="outline" size="md" title="About Me" radius="sm" />
+        <ButtonLink href="/about" color="#0E2954" variant="outline" size="md" title="About Me" radius="sm" />
       </VStack>
     </Flex>
   );
