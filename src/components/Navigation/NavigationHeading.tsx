@@ -4,7 +4,7 @@ import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';
 
 type NavHeading = {
-  title: string;
+  title: any;
   href: string;
   headingSize: string;
   activeColor: string;
