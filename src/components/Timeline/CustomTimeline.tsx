@@ -1,7 +1,4 @@
-'use client';
-
 import { Box, Flex, Text } from '@chakra-ui/react';
-import { GraduationCap } from 'lucide-react';
 
 type CustomTimeline = {
   timeline: string;

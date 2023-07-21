@@ -21,6 +21,7 @@ import GitIcon from '@/assets/svg/git.svg';
 import VscodeIcon from '@/assets/svg/visual-studio-code.svg';
 import FigmaIcon from '@/assets/svg/figma.svg';
 import ArduinoIcon from '@/assets/svg/arduino.svg';
+import PostmanIcon from '@/assets/svg/postman.svg';
 
 export const TechStacks = [
   {
@@ -165,6 +166,11 @@ export const TechStacks = [
         id: 5,
         name: 'IoT',
         icon: ArduinoIcon,
+      },
+      {
+        id: 6,
+        name: 'Postman',
+        icon: PostmanIcon,
       },
     ],
   },

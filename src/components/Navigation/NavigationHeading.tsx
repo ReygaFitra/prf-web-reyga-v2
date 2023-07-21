@@ -1,4 +1,3 @@
-'use client';
 import { Heading } from '@chakra-ui/react';
 import NextLink from 'next/link';
 import { usePathname } from 'next/navigation';

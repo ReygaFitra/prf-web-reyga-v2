@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
 import TitleSection from '@/components/Title/TitleSection';
 
-const SkillsFragment = () => {
+const TechStackFragment = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (index: number) => {
@@ -48,4 +48,4 @@ const SkillsFragment = () => {
   );
 };
 
-export default SkillsFragment;
+export default TechStackFragment;

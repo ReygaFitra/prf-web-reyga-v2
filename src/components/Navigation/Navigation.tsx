@@ -1,4 +1,3 @@
-'use client';
 import { Flex, HStack, Button, Box } from '@chakra-ui/react';
 import NavigationHeading from './NavigationHeading';
 import NavigationLink from './NavigationLink';

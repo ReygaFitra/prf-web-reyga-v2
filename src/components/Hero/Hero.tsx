@@ -1,4 +1,3 @@
-'use client';
 import { Text, Heading, Flex, VStack } from '@chakra-ui/react';
 
 import { TypeAnimation } from 'react-type-animation';

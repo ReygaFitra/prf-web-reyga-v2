@@ -1,4 +1,3 @@
-'use client';
 import NextLink from 'next/link';
 
 type FootLink = {

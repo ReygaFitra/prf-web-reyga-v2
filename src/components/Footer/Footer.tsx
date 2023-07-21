@@ -1,4 +1,3 @@
-'use client';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import FooterLink from './FooterLink';
 import NextLink from 'next/link';

@@ -1,9 +1,10 @@
 'use client';
+import Swiper from '@/components/Swiper/Swiper';
 import BioFragment from '@/fragments/BioFragment';
-import SkillsFragment from '@/fragments/SkillsFragment';
 import SocialFragment from '@/fragments/SocialFragment';
 import TimelineFragment from '@/fragments/TimelineFragment';
 import { Container } from '@chakra-ui/react';
+import TechStackFragment from '@/fragments/TechStackFragment';
 
 export const metadata = {
   title: 'Reyga Fitra Ramadhan | About',
@@ -14,9 +15,10 @@ export default function About() {
   return (
     <Container minWidth="6xl">
       <BioFragment />
-      <SkillsFragment />
+      <TechStackFragment />
       <TimelineFragment />
       <SocialFragment />
+      <Swiper />
     </Container>
   );
 }
