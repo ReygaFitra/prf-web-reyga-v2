@@ -1,11 +1,9 @@
-'use client';
-
-import { Flex, Box, Text, Container } from '@chakra-ui/react';
+import { Flex, Box, Text } from '@chakra-ui/react';
 import FooterLink from '@/components/Footer/FooterLink';
-import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import TitleSection from '@/components/Title/TitleSection';
 import ContactForm from '@/components/ContactForm/ContactForm';
 import Frame from '@/components/Frame/Frame';
+import { Socials } from '@/_data/tsx/Socials';
 
 const SocialFragment = () => {
   return (
@@ -18,18 +16,11 @@ const SocialFragment = () => {
           </Text>
           <Frame bgColor="#0E2954" maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #4E4FEB" overflow="hidden">
             <Flex gap={5} my="10px" justifyContent="space-evenly" wrap="wrap">
-              <FooterLink href="https://github.com/ReygaFitra">
-                <Github color="#ECF8F9" />
-              </FooterLink>
-              <FooterLink href="https://www.linkedin.com/in/reygafitra24/">
-                <Linkedin color="#ECF8F9" />
-              </FooterLink>
-              <FooterLink href="https://www.instagram.com/reygaaa24/">
-                <Instagram color="#ECF8F9" />
-              </FooterLink>
-              <FooterLink href="https://web.facebook.com/reyga.fitraramadhan.1/">
-                <Facebook color="#ECF8F9" />
-              </FooterLink>
+              {Socials.map((social, index) => (
+                <FooterLink key={index} href={social.href}>
+                  {social.icon}
+                </FooterLink>
+              ))}
             </Flex>
           </Frame>
         </Box>

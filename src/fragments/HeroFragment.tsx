@@ -1,4 +1,3 @@
-'use client';
 import Hero from '@/components/Hero/Hero';
 import { Box, Flex } from '@chakra-ui/react';
 

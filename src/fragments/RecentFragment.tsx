@@ -1,4 +1,3 @@
-'use client';
 import { Box, Heading, Card, CardBody, Divider, Text, CardHeader } from '@chakra-ui/react';
 
 const RecentFragment = () => {

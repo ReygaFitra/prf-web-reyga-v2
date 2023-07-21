@@ -1,4 +1,3 @@
-'use client';
 import { TabList, Tabs, Tab, TabPanels, TabPanel, TabIndicator, Grid, GridItem, Heading, HStack, Box } from '@chakra-ui/react';
 import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';

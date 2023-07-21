@@ -1,5 +1,3 @@
-'use client';
-
 import TitleSection from '@/components/Title/TitleSection';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import Bio from '@/_data/json/Bio.json';

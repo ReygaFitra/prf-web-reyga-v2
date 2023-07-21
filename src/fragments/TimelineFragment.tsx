@@ -1,9 +1,11 @@
-'use client';
 import CustomTimeline from '@/components/Timeline/CustomTimeline';
 import TitleSection from '@/components/Title/TitleSection';
 import { Box, Flex } from '@chakra-ui/react';
 import { Timelines } from '@/_data/tsx/Timelines';
 import Swiper from '@/components/Swiper/Swiper';
+import Image from 'next/image';
+import { Certifications } from '@/_data/tsx/Certif';
+import { SplideSlide } from '@splidejs/react-splide';
 
 const TimelineFragment = () => {
   return (
@@ -16,7 +18,13 @@ const TimelineFragment = () => {
           ))}
         </Box>
         <Box>
-          <Swiper />
+          <Swiper>
+            {Certifications.map((image, index) => (
+              <SplideSlide key={index}>
+                <Image src={image.img} alt={`Carousel Image ${index}`} style={{ display: 'flex', objectFit: 'cover', alignItems: 'center', height: '100%', width: '100%' }} />
+              </SplideSlide>
+            ))}
+          </Swiper>
         </Box>
       </Flex>
     </>
