@@ -5,6 +5,7 @@ import FooterLink from '@/components/Footer/FooterLink';
 import { Github, Linkedin, Instagram, Facebook } from 'lucide-react';
 import TitleSection from '@/components/Title/TitleSection';
 import ContactForm from '@/components/ContactForm/ContactForm';
+import Frame from '@/components/Frame/Frame';
 
 const SocialFragment = () => {
   return (
@@ -15,7 +16,7 @@ const SocialFragment = () => {
           <Text fontStyle={'italic'} color="#0E2954" my="10px">
             You can contact me via Socials Bellow :
           </Text>
-          <Box bgColor="#0E2954" w="100%" p="2px" style={{ boxShadow: '9px 9px #4E4FEB', overflow: 'hidden' }}>
+          <Frame bgColor="#0E2954" maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #4E4FEB" overflow="hidden">
             <Flex gap={5} my="10px" justifyContent="space-evenly" wrap="wrap">
               <FooterLink href="https://github.com/ReygaFitra">
                 <Github color="#ECF8F9" />
@@ -30,7 +31,7 @@ const SocialFragment = () => {
                 <Facebook color="#ECF8F9" />
               </FooterLink>
             </Flex>
-          </Box>
+          </Frame>
         </Box>
         <Box>
           <ContactForm />

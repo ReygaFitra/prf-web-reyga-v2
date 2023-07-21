@@ -6,13 +6,14 @@ import certif2 from '@/assets/img/certifications/certif2.jpg';
 import certif3 from '@/assets/img/certifications/certif3.jpg';
 import certif4 from '@/assets/img/certifications/certif4.jpg';
 import certif5 from '@/assets/img/certifications/certif5.jpg';
-import { Box, Container } from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react';
+import Frame from '../Frame/Frame';
 const images = [certif1, certif2, certif3, certif4, certif5];
 
 const Swiper = () => {
   return (
     <Container minW={'xl'}>
-      <Box w="full" minH="3em" bgColor={'#0E2954'} p="1rem" style={{ boxShadow: '17px 17px #4E4FEB', overflow: 'hidden' }}>
+      <Frame w="full" minH="3em" bgColor="#0E2954" p="1rem" rounded="none" boxShadow="14px 14px #4E4FEB" overflow="hidden">
         <Splide
           options={{
             type: 'slide',
@@ -31,7 +32,7 @@ const Swiper = () => {
             </SplideSlide>
           ))}
         </Splide>
-      </Box>
+      </Frame>
     </Container>
   );
 };
