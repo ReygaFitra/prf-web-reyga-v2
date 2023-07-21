@@ -1,5 +1,4 @@
 'use client';
-import Swiper from '@/components/Swiper/Swiper';
 import BioFragment from '@/fragments/BioFragment';
 import SocialFragment from '@/fragments/SocialFragment';
 import TimelineFragment from '@/fragments/TimelineFragment';
@@ -18,7 +17,6 @@ export default function About() {
       <TechStackFragment />
       <TimelineFragment />
       <SocialFragment />
-      <Swiper />
     </Container>
   );
 }
