@@ -5,7 +5,7 @@ import { Github, Linkedin, Instagram, Copyright } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <Box px="125px" py="20px">
+    <Box px="125px" py="25px">
       <VStack>
         <Flex justifyContent="center" gap={3}>
           <FooterLink href="https://github.com/ReygaFitra">
