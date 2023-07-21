@@ -8,11 +8,11 @@
   /* background-color: #222222; */
 }
 
-.main-layer {
+/* .main-layer {
   background-image: radial-gradient(#4e4feb 2px, transparent 2px);
   background-size: 54px 54px;
   min-height: 100vh;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 10px;
