@@ -3,6 +3,7 @@ import certif2 from '@/assets/img/certifications/certif2.jpg';
 import certif3 from '@/assets/img/certifications/certif3.jpg';
 import certif4 from '@/assets/img/certifications/certif4.jpg';
 import certif5 from '@/assets/img/certifications/certif5.jpg';
+import certif6 from '@/assets/img/certifications/certif6.jpg';
 
 export const Certifications = [
   {
@@ -24,5 +25,9 @@ export const Certifications = [
   {
     id: 5,
     img: certif5,
+  },
+  {
+    id: 6,
+    img: certif6,
   },
 ];

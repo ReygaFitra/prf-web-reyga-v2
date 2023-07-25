@@ -9,7 +9,7 @@ import { File, Link, MonitorPlay } from 'lucide-react';
 const ProjectsFragment = () => {
   return (
     <>
-      <TitleSection width="200px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Projects" dividerColor="#4E4FEB" />
+      <TitleSection width="140px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Projects" dividerColor="#4E4FEB" />
       <Grid gridTemplateColumns="repeat(3, 1fr)" my="20px" gap={7}>
         {Projects.map((project, index) => (
           <GridItem key={index}>
