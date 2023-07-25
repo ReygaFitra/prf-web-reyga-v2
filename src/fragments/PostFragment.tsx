@@ -10,24 +10,29 @@ const PostFragment = () => {
       <TitleSection width="100px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Blog" dividerColor="#4E4FEB" />
       <Box w="100%" h="450px" my="20px" mb="50px" color="#ECF8F9">
         <Frame bgColor="#0E2954" maxW="100%" h="100%" boxShadow="17px 17px #4E4FEB" overflow="hidden" rounded="sm">
-          <Image priority={true} src={Project3} alt="example" style={{ objectFit: 'cover', maxHeight: '280px', width: '100%' }} />
-          <Box p="10px">
+          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
+          <Box p="15px">
             <Heading size="lg" fontFamily="changa">
               Post 1
             </Heading>
-            <Text>This is description post 1</Text>
+            <Text>This is post 1 date</Text>
+            <Text fontSize="2xl" my="15px">
+              This is post 1 Description
+            </Text>
           </Box>
         </Frame>
       </Box>
-
       <Box w="100%" h="450px" my="20px" mb="50px" color="#ECF8F9">
         <Frame bgColor="#0E2954" maxW="100%" h="100%" boxShadow="17px 17px #4E4FEB" overflow="hidden" rounded="sm">
-          <Image priority={true} src={Project3} alt="example" style={{ objectFit: 'cover', maxHeight: '280px', width: '100%' }} />
-          <Box p="10px">
+          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
+          <Box p="15px">
             <Heading size="lg" fontFamily="changa">
               Post 1
             </Heading>
-            <Text>This is description post 1</Text>
+            <Text>This is post 1 date</Text>
+            <Text fontSize="2xl" my="15px">
+              This is post 1 Description
+            </Text>
           </Box>
         </Frame>
       </Box>
