@@ -22,6 +22,11 @@ import VscodeIcon from '@/assets/svg/visual-studio-code.svg';
 import FigmaIcon from '@/assets/svg/figma.svg';
 import ArduinoIcon from '@/assets/svg/arduino.svg';
 import PostmanIcon from '@/assets/svg/postman.svg';
+import ReduxIcon from '@/assets/svg/redux.svg';
+import VueIcon from '@/assets/svg/vue.svg';
+import NuxtIcon from '@/assets/svg/nuxt.svg';
+import VuetifyIcon from '@/assets/svg/vuetify.svg';
+import VuexIcon from '@/assets/svg/vue.svg';
 
 export const TechStacks = [
   {
@@ -86,6 +91,31 @@ export const TechStacks = [
         id: 6,
         name: 'Framer Motion',
         icon: FramerMotionIcon,
+      },
+      {
+        id: 7,
+        name: 'Redux',
+        icon: ReduxIcon,
+      },
+      {
+        id: 8,
+        name: 'Vue JS',
+        icon: VueIcon,
+      },
+      {
+        id: 9,
+        name: 'Nuxt JS',
+        icon: NuxtIcon,
+      },
+      {
+        id: 10,
+        name: 'Vuex',
+        icon: VueIcon,
+      },
+      {
+        id: 11,
+        name: 'Vuetify',
+        icon: VuetifyIcon,
       },
     ],
   },
