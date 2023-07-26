@@ -6,7 +6,7 @@ import { SocialsFooter } from '@/_data/tsx/Socials';
 
 const Footer = () => {
   return (
-    <Box px="125px" py="25px">
+    <Box px="125px" py="5px" pos="sticky" bottom={0} zIndex={20} bgColor={'rgba(238, 240, 242, 0.95)'} boxShadow="sm">
       <VStack>
         <Flex justifyContent="center" gap={3}>
           {SocialsFooter.map((social, index) => (

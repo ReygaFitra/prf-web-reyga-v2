@@ -1,8 +1,9 @@
 'use client';
 import './globals.css';
-import { ChakraProvider } from '@chakra-ui/react';
+import { Box, ChakraProvider } from '@chakra-ui/react';
 import Navigation from '@/components/Navigation/Navigation';
 import Footer from '@/components/Footer/Footer';
+import RootContainer from '@/components/RootContainer/RootContainer';
 
 export const metadata = {
   title: 'Reyga Fitra Ramadhan',
@@ -14,9 +15,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ChakraProvider>
-          <Navigation />
-          {children}
-          <Footer />
+          <RootContainer bgColor="#eef0f2" fontFamily="changa">
+            <Navigation />
+            {children}
+            <Footer />
+          </RootContainer>
         </ChakraProvider>
       </body>
     </html>

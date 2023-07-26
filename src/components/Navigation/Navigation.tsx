@@ -6,7 +6,7 @@ import { Brackets } from 'lucide-react';
 
 const Navigation = () => {
   return (
-    <Box pos="sticky" top={0} zIndex={20} backdropFilter="auto" backdropBlur="8px" boxShadow="sm">
+    <Box pos="sticky" top={0} zIndex={20} bgColor={'rgba(238, 240, 242, 0.95)'} boxShadow="sm">
       <Flex justifyContent="space-between" py="10px" px="115px">
         <NavigationHeading headingSize="lg" href="/" title={<Brackets />} headingColor="#0E2954" activeColor="#4E4FEB" />
         <HStack alignItems="center" gap={5}>
