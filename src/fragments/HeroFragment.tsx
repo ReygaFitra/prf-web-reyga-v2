@@ -4,7 +4,7 @@ import { Box, Flex } from '@chakra-ui/react';
 const HeroFragment = () => {
   return (
     <Flex justifyContent="center" alignItems="center" height="100vh" width="100%">
-      <Box minW="60vw" minH="75vh" borderRadius="md" p="20px" border={'3px dashed #4E4FEB'}>
+      <Box minW="60vw" minH="75vh" borderRadius="md" p="20px" border={'3px dashed'} borderColor="tertiary.light">
         <Hero name="Reyga Fitra Ramadhan" nameColor="#4E4FEB" nameFont="Changa" roleColor="#068FFF" roleSequence={['< Software Engineer />', 3000, '< Fullstack Developer />', 3000]} />
       </Box>
     </Flex>

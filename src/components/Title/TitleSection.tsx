@@ -7,17 +7,16 @@ type Title = {
   headingColor: string;
   headingFont: string;
   name: string;
-  dividerColor: string;
 };
 
 const TitleSection = (props: Title) => {
-  const { width, headingSize, headingColor, headingFont, name, dividerColor } = props;
+  const { width, headingSize, headingColor, headingFont, name } = props;
   return (
     <Box w={width}>
       <Heading size={headingSize} color={headingColor} py="15px" fontFamily={headingFont}>
         {name}
       </Heading>
-      <HorizontalDivider width="100%" height="3px" color={dividerColor} />
+      <HorizontalDivider width="100%" height="3px" />
     </Box>
   );
 };
