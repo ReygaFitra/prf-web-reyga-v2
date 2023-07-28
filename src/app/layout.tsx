@@ -1,6 +1,6 @@
 'use client';
 import './globals.css';
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import Navigation from '@/components/Navigation/Navigation';
 import Footer from '@/components/Footer/Footer';
 import RootContainer from '@/components/RootContainer/RootContainer';
@@ -16,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body>
         <ChakraProvider theme={Theme}>
+          <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
           <RootContainer bgColor="base.light" fontFamily="changa">
             <Navigation />
             {children}

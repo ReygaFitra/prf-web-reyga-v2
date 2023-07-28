@@ -4,7 +4,7 @@ import { Box, Flex, HStack, Heading, Text } from '@chakra-ui/react';
 const DashboardFragment = () => {
   return (
     <>
-      <TitleSection width="180px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Dashboard" dividerColor="#4E4FEB" />
+      <TitleSection width="180px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Dashboard" />
       <Flex justifyContent="center" my="20px" gap={3}>
         <Box bgColor={'#0E2954'} w="100%" h="100px" rounded="md" color="#ECF8F9" p="20px">
           <Heading size="md" fontFamily="changa">

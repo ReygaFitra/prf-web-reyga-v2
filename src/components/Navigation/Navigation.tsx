@@ -1,8 +1,10 @@
-import { Flex, HStack, Button, Box } from '@chakra-ui/react';
+import { Flex, HStack, Box } from '@chakra-ui/react';
 import NavigationHeading from './NavigationHeading';
 import NavigationLink from './NavigationLink';
 import NavLinks from '@/_data/json/NavLinks.json';
 import { Brackets } from 'lucide-react';
+import ThemeButton from '../ThemeButton/ThemeButton';
+import { Moon, Sun } from 'lucide-react';
 
 const Navigation = () => {
   return (
@@ -15,9 +17,7 @@ const Navigation = () => {
           })}
         </HStack>
         <HStack>
-          <Button variant="outline" size="sm" alignItems="center" color="#4E4FEB">
-            Theme
-          </Button>
+          <ThemeButton sunIcon={<Sun color="#0d21a1" size="25px" />} moonIcon={<Moon color="#0d21a1" size="25px" />} />
         </HStack>
       </Flex>
     </Box>

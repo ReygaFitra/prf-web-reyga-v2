@@ -5,7 +5,7 @@ import Bio from '@/_data/json/Bio.json';
 const BioFragment = () => {
   return (
     <>
-      <TitleSection width="100px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="About" dividerColor="#4E4FEB" />
+      <TitleSection width="100px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="About" />
       <Box py="10px" my="20px">
         <Flex direction="column" gap={5}>
           {Bio.map((bio) => (

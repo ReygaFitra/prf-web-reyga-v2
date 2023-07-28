@@ -8,7 +8,7 @@ import { Socials } from '@/_data/tsx/Socials';
 const SocialFragment = () => {
   return (
     <>
-      <TitleSection width="200px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Get in Touch" dividerColor="#4E4FEB" />
+      <TitleSection width="200px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Get in Touch" />
       <Flex justifyContent="space-between">
         <Box my="20px" w="280px">
           <Text fontStyle={'italic'} color="#0E2954" my="10px">

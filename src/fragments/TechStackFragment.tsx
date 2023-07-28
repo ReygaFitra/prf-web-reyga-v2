@@ -12,7 +12,7 @@ const TechStackFragment = () => {
 
   return (
     <>
-      <TitleSection width="280px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Technology & Stack" dividerColor="#4E4FEB" />
+      <TitleSection width="280px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Technology & Stack" />
 
       <Tabs isFitted variant="unstyled" index={activeTab} onChange={handleTabChange} my="20px">
         <TabList>
