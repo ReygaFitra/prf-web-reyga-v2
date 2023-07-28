@@ -13,14 +13,14 @@ const Navigation = () => {
   return (
     <Box pos="sticky" top={0} zIndex={20} bgColor={navigationColor}>
       <Flex justifyContent="space-between" py="10px">
-        <NavigationHeading headingSize="lg" href="/" title={<Brackets />} headingColor={inactiveColor} activeColor={activeColor} />
+        <NavigationHeading headingSize="lg" href="/" title={<Brackets size="30px" />} headingColor={inactiveColor} activeColor={activeColor} />
         <HStack alignItems="center" gap={5}>
           {NavLinks.map((link) => {
             return <NavigationLink key={link.id} title={link.title} href={link.href} linkColor={inactiveColor} activeColor={activeColor} dividerOrientation="vertical" dividerHeight={link.dividerHeight} />;
           })}
         </HStack>
         <HStack>
-          <ThemeButton sunIcon={<Moon color="#0d21a1" size="25px" />} moonIcon={<Sun color="#72b01d" size="25px" />} />
+          <ThemeButton sunIcon={<Moon color="#0d21a1" size="25px" />} moonIcon={<Sun color="#49a078" size="25px" />} />
         </HStack>
       </Flex>
     </Box>

@@ -1,26 +1,26 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 
 const config: ThemeConfig = {
-  initialColorMode: 'light',
+  initialColorMode: 'system',
   useSystemColorMode: true,
 };
 
 const colors = {
   primary: {
     light: '#0d21a1',
-    dark: '#72b01d',
+    dark: '#49a078',
   },
   secondary: {
     light: '#011638',
-    dark: '#3f7d20',
+    dark: '#216869',
   },
   tertiary: {
-    light: '#eec643',
-    dark: '#f3eff5',
+    light: '#ff7b00',
+    dark: '#dce1de',
   },
   base: {
     light: '#eef0f2',
-    dark: '#212224',
+    dark: '#1f2421',
   },
   neutral: {
     light: '#141414',

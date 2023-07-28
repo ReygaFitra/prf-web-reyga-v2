@@ -17,7 +17,7 @@ const SocialFragment = () => {
           <Text fontStyle={'italic'} color={secondaryColor} my="10px">
             You can contact me via Socials Bellow :
           </Text>
-          <Frame bgColor={secondaryColor} maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #4E4FEB" overflow="hidden">
+          <Frame bgColor={secondaryColor} maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #454955" overflow="hidden">
             <Flex gap={5} my="10px" justifyContent="space-evenly" wrap="wrap">
               {Socials.map((social, index) => (
                 <FooterLink key={index} href={social.href}>

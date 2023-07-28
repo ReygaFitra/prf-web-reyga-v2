@@ -12,7 +12,7 @@ const PostFragment = () => {
     <>
       <TitleSection width="100px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Blog" />
       <Box w="100%" h="450px" my="20px" mb="50px" color={baseColor}>
-        <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow="17px 17px #4E4FEB" overflow="hidden" rounded="sm">
+        <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow="17px 17px #454955" overflow="hidden" rounded="sm">
           <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
           <Box p="15px">
             <Heading size="lg" fontFamily="changa">
@@ -26,7 +26,7 @@ const PostFragment = () => {
         </Frame>
       </Box>
       <Box w="100%" h="450px" my="20px" mb="50px" color={baseColor}>
-        <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow="17px 17px #4E4FEB" overflow="hidden" rounded="sm">
+        <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow="17px 17px #454955" overflow="hidden" rounded="sm">
           <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
           <Box p="15px">
             <Heading size="lg" fontFamily="changa">

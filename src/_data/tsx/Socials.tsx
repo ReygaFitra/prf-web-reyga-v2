@@ -27,16 +27,16 @@ export const SocialsFooter = [
   {
     id: 1,
     href: 'https://github.com/ReygaFitra',
-    icon: <Github color="#4E4FEB" />,
+    icon: <Github color="#454955" />,
   },
   {
     id: 2,
     href: 'https://www.linkedin.com/in/reygafitra24/',
-    icon: <Linkedin color="#4E4FEB" />,
+    icon: <Linkedin color="#454955" />,
   },
   {
     id: 3,
     href: 'https://www.instagram.com/reygaaa24/',
-    icon: <Instagram color="#4E4FEB" />,
+    icon: <Instagram color="#454955" />,
   },
 ];

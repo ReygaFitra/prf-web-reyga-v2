@@ -26,8 +26,8 @@ const Hero = (props: Hero) => {
         <Text color={roleColor}>
           <TypeAnimation sequence={roleSequence} style={{ fontSize: '1.5em' }} repeat={Infinity} />
         </Text>
-        <ButtonLink href="/about" color={secondaryColor} variant="outline" size="md" title="About Me" radius="sm" />
-        <Frame maxW="300px" maxH="300px" rounded="sm" my="20px" bgColor={secondaryColor} p="10px" boxShadow={`13px 13px #0d21a1`} overflow="hidden">
+        <ButtonLink href="/about" color={primaryColor} variant="outline" size="md" title="About Me" radius="sm" />
+        <Frame maxW="300px" maxH="300px" rounded="sm" my="20px" bgColor={secondaryColor} p="10px" boxShadow={`13px 13px #454955`} overflow="hidden">
           <Image priority={true} src={hamster} alt="source: https://unsplash.com/photos/D_pXn7cueOs" style={{ objectFit: 'cover', alignItems: 'center', height: '100%', width: '100%' }} />
         </Frame>
       </VStack>

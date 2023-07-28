@@ -11,7 +11,7 @@ const ContactForm = () => {
   return (
     <Container minW="xl" my="20px">
       <FormControl w="100%" color={tertiaryColor}>
-        <Frame w="100%" h="100%" bgColor={secondaryColor} rounded="none" p="20px" boxShadow="15px 15px #4E4FEB" overflow="hidden">
+        <Frame w="100%" h="100%" bgColor={secondaryColor} rounded="none" p="20px" boxShadow="15px 15px #454955" overflow="hidden">
           <Text fontStyle="italic" color={baseColor} my="10px">
             Or you can send me a message via email :
           </Text>

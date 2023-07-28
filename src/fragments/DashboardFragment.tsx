@@ -1,11 +1,11 @@
 import TitleSection from '@/components/Title/TitleSection';
-import { Box, Flex, HStack, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 
 const DashboardFragment = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
   const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
   const tertiaryColor = useColorModeValue('tertiary.light', 'tertiary.dark');
-  const baseColor = useColorModeValue('base.light', 'base.dark');
+
   return (
     <>
       <TitleSection width="180px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Dashboard" />
