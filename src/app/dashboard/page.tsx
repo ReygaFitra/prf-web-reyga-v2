@@ -1,6 +1,6 @@
 'use client';
 import DashboardFragment from '@/fragments/DashboardFragment';
-import { Container } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 export const metadata = {
   title: 'Reyga Fitra Ramadhan | Dashboard',
@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function Dashboard() {
   return (
-    <Container minW="6xl">
+    <Box>
       <DashboardFragment />
-    </Container>
+    </Box>
   );
 }

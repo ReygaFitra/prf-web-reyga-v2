@@ -2,7 +2,7 @@
 import BioFragment from '@/fragments/BioFragment';
 import SocialFragment from '@/fragments/SocialFragment';
 import TimelineFragment from '@/fragments/TimelineFragment';
-import { Container } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 import TechStackFragment from '@/fragments/TechStackFragment';
 
 export const metadata = {
@@ -12,11 +12,11 @@ export const metadata = {
 
 export default function About() {
   return (
-    <Container minWidth="6xl">
+    <Box>
       <BioFragment />
       <TechStackFragment />
       <TimelineFragment />
       <SocialFragment />
-    </Container>
+    </Box>
   );
 }

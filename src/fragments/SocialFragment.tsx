@@ -1,4 +1,4 @@
-import { Flex, Box, Text } from '@chakra-ui/react';
+import { Flex, Box, Text, useColorModeValue } from '@chakra-ui/react';
 import FooterLink from '@/components/Footer/FooterLink';
 import TitleSection from '@/components/Title/TitleSection';
 import ContactForm from '@/components/ContactForm/ContactForm';
@@ -6,15 +6,18 @@ import Frame from '@/components/Frame/Frame';
 import { Socials } from '@/_data/tsx/Socials';
 
 const SocialFragment = () => {
+  const primaryColor = useColorModeValue('primary.light', 'primary.dark');
+  const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
+
   return (
     <>
-      <TitleSection width="200px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="Get in Touch" />
+      <TitleSection width="200px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Get in Touch" />
       <Flex justifyContent="space-between">
         <Box my="20px" w="280px">
-          <Text fontStyle={'italic'} color="#0E2954" my="10px">
+          <Text fontStyle={'italic'} color={secondaryColor} my="10px">
             You can contact me via Socials Bellow :
           </Text>
-          <Frame bgColor="#0E2954" maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #4E4FEB" overflow="hidden">
+          <Frame bgColor={secondaryColor} maxW="100%" maxH="100%" rounded="none" boxShadow="9px 9px #4E4FEB" overflow="hidden">
             <Flex gap={5} my="10px" justifyContent="space-evenly" wrap="wrap">
               {Socials.map((social, index) => (
                 <FooterLink key={index} href={social.href}>

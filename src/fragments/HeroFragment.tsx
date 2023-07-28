@@ -1,11 +1,13 @@
 import Hero from '@/components/Hero/Hero';
-import { Box, Flex } from '@chakra-ui/react';
+import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
 
 const HeroFragment = () => {
+  const primaryColor = useColorModeValue('primary.light', 'primary.dark');
+  const tertiaryColor = useColorModeValue('tertiary.light', 'tertiary.dark');
   return (
-    <Flex justifyContent="center" alignItems="center" height="100vh" width="100%">
-      <Box minW="60vw" minH="75vh" borderRadius="md" p="20px" border={'3px dashed'} borderColor="tertiary.light">
-        <Hero name="Reyga Fitra Ramadhan" nameColor="primary.light" nameFont="Changa" roleColor="#068FFF" roleSequence={['< Software Engineer />', 3000, '< Fullstack Developer />', 3000]} />
+    <Flex justifyContent="center" alignItems="center">
+      <Box w="full" h="full" py="50px" px="100px" borderRadius="md" border={'3px dashed'} borderColor={tertiaryColor}>
+        <Hero name="Reyga Fitra Ramadhan" nameColor={primaryColor} nameFont="Changa" roleColor={tertiaryColor} roleSequence={['< Software Engineer />', 3000, '< Fullstack Developer />', 3000]} />
       </Box>
     </Flex>
   );

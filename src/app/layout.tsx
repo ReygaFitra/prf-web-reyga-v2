@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <ChakraProvider theme={Theme}>
           <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
-          <RootContainer bgColor="base.light" fontFamily="changa">
+          <RootContainer fontFamily="changa">
             <Navigation />
             {children}
             <Footer />

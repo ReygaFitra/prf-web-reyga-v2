@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 
 type CustomTimeline = {
   timeline: string;
@@ -7,14 +7,17 @@ type CustomTimeline = {
 };
 
 const CustomTimeline = (props: CustomTimeline) => {
+  const primaryColor = useColorModeValue('primary.light', 'primary.dark');
+  const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
+  const tertiaryColor = useColorModeValue('tertiary.light', 'tertiary.dark');
   const { timeline, description, timelineIcon } = props;
 
   return (
     <Box>
       <Flex gap={2}>
         <Flex direction="column">
-          <Box p="10px" bg="#4E4FEB" rounded="full" border="4px" borderColor="#068FFF"></Box>
-          <Box w="4px" bg="#068FFF" height="85px" m="auto"></Box>
+          <Box p="10px" bg={secondaryColor} rounded="full" border="4px" borderColor={primaryColor}></Box>
+          <Box w="4px" bg={primaryColor} height="85px" m="auto"></Box>
         </Flex>
 
         <Box>
@@ -22,10 +25,10 @@ const CustomTimeline = (props: CustomTimeline) => {
             <Flex gap={2}>
               {timelineIcon}
               <Box>
-                <Text fontSize="xl" fontWeight="semibold" color="#4E4FEB">
+                <Text fontSize="xl" fontWeight="semibold" color={primaryColor}>
                   {timeline}
                 </Text>
-                <Text fontSize="sm" fontStyle="italic" color="#0E2954">
+                <Text fontSize="sm" fontStyle="italic" color={tertiaryColor}>
                   {description}
                 </Text>
               </Box>

@@ -1,15 +1,15 @@
-import { Box } from '@chakra-ui/react';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 
 type RootContainer = {
   children: React.ReactNode;
-  bgColor: string;
   fontFamily: string;
 };
 
 const RootContainer = (props: RootContainer) => {
-  const { children, bgColor, fontFamily } = props;
+  const { children, fontFamily } = props;
+  const baseColor = useColorModeValue('base.light', 'base.dark');
   return (
-    <Box bgColor={bgColor} fontFamily={fontFamily}>
+    <Box fontFamily={fontFamily} m="auto" w="full" h="full" minH="100vh" display="flex" flexDirection="column" justifyContent="space-between" bgColor={baseColor} px="125px">
       {children}
     </Box>
   );

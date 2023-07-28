@@ -1,4 +1,4 @@
-import { Flex, HStack, Box } from '@chakra-ui/react';
+import { Flex, HStack, Box, useColorModeValue } from '@chakra-ui/react';
 import NavigationHeading from './NavigationHeading';
 import NavigationLink from './NavigationLink';
 import NavLinks from '@/_data/json/NavLinks.json';
@@ -7,17 +7,20 @@ import ThemeButton from '../ThemeButton/ThemeButton';
 import { Moon, Sun } from 'lucide-react';
 
 const Navigation = () => {
+  const navigationColor = useColorModeValue('base.light', 'base.dark');
+  const inactiveColor = useColorModeValue('secondary.light', 'secondary.dark');
+  const activeColor = useColorModeValue('primary.light', 'primary.dark');
   return (
-    <Box pos="sticky" top={0} zIndex={20} bgColor={'rgba(238, 240, 242, 0.95)'} boxShadow="sm">
-      <Flex justifyContent="space-between" py="10px" px="115px">
-        <NavigationHeading headingSize="lg" href="/" title={<Brackets />} headingColor="#0E2954" activeColor="#4E4FEB" />
+    <Box pos="sticky" top={0} zIndex={20} bgColor={navigationColor}>
+      <Flex justifyContent="space-between" py="10px">
+        <NavigationHeading headingSize="lg" href="/" title={<Brackets />} headingColor={inactiveColor} activeColor={activeColor} />
         <HStack alignItems="center" gap={5}>
           {NavLinks.map((link) => {
-            return <NavigationLink key={link.id} title={link.title} href={link.href} linkColor="#0E2954" activeColor="#4E4FEB" dividerOrientation="vertical" dividerHeight={link.dividerHeight} />;
+            return <NavigationLink key={link.id} title={link.title} href={link.href} linkColor={inactiveColor} activeColor={activeColor} dividerOrientation="vertical" dividerHeight={link.dividerHeight} />;
           })}
         </HStack>
         <HStack>
-          <ThemeButton sunIcon={<Sun color="#0d21a1" size="25px" />} moonIcon={<Moon color="#0d21a1" size="25px" />} />
+          <ThemeButton sunIcon={<Moon color="#0d21a1" size="25px" />} moonIcon={<Sun color="#72b01d" size="25px" />} />
         </HStack>
       </Flex>
     </Box>

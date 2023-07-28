@@ -1,15 +1,17 @@
 import TitleSection from '@/components/Title/TitleSection';
-import { Box, Flex, Text } from '@chakra-ui/react';
+import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import Bio from '@/_data/json/Bio.json';
 
 const BioFragment = () => {
+  const primaryColor = useColorModeValue('primary.light', 'primary.dark');
+  const tertiaryColor = useColorModeValue('tertiary.light', 'tertiary.dark');
   return (
     <>
-      <TitleSection width="100px" headingSize="lg" headingColor="#4E4FEB" headingFont="Changa" name="About" />
+      <TitleSection width="100px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="About" />
       <Box py="10px" my="20px">
         <Flex direction="column" gap={5}>
           {Bio.map((bio) => (
-            <Text key={bio.id} color="#0E2954">
+            <Text key={bio.id} color={tertiaryColor}>
               {bio.content}
             </Text>
           ))}

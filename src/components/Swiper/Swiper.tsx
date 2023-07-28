@@ -1,6 +1,6 @@
 import { Splide } from '@splidejs/react-splide';
 import '@splidejs/splide/dist/css/splide.min.css';
-import { Container } from '@chakra-ui/react';
+import { Container, useColorModeValue } from '@chakra-ui/react';
 import Frame from '../Frame/Frame';
 
 type Swiper = {
@@ -8,10 +8,12 @@ type Swiper = {
 };
 
 const Swiper = (props: Swiper) => {
+  const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
+
   const { children } = props;
   return (
     <Container minW="xl">
-      <Frame w="full" minH="3em" bgColor="#0E2954" p="1rem" rounded="none" boxShadow="15px 15px #4E4FEB" overflow="hidden">
+      <Frame w="full" minH="3em" bgColor={secondaryColor} p="1rem" rounded="none" boxShadow="15px 15px #4E4FEB" overflow="hidden">
         <Splide
           options={{
             type: 'slide',
