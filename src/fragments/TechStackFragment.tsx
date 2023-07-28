@@ -1,7 +1,7 @@
 import { TabList, Tabs, Tab, TabPanels, TabPanel, TabIndicator, Grid, GridItem, Heading, HStack, Box, useColorModeValue } from '@chakra-ui/react';
 import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
-import TitleSection from '@/components/Title/TitleSection';
+import TitleSection from '@/components/ui/Title/TitleSection';
 
 const TechStackFragment = () => {
   const [activeTab, setActiveTab] = useState(0);

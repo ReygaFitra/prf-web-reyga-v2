@@ -1,4 +1,4 @@
-import TitleSection from '@/components/Title/TitleSection';
+import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 
 const DashboardFragment = () => {

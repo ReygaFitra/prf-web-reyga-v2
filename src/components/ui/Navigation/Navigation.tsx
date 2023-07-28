@@ -11,7 +11,7 @@ const Navigation = () => {
   const inactiveColor = useColorModeValue('secondary.light', 'secondary.dark');
   const activeColor = useColorModeValue('primary.light', 'primary.dark');
   return (
-    <Box pos="sticky" top={0} zIndex={20} bgColor={navigationColor}>
+    <Box pos="sticky" top={0} zIndex={20} bgColor={navigationColor} px="100px">
       <Flex justifyContent="space-between" py="10px">
         <NavigationHeading headingSize="lg" href="/" title={<Brackets size="30px" />} headingColor={inactiveColor} activeColor={activeColor} />
         <HStack alignItems="center" gap={5}>

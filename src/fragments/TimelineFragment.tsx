@@ -1,8 +1,8 @@
-import CustomTimeline from '@/components/Timeline/CustomTimeline';
-import TitleSection from '@/components/Title/TitleSection';
+import CustomTimeline from '@/components/ui/Timeline/CustomTimeline';
+import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Flex, useColorModeValue } from '@chakra-ui/react';
 import { Timelines } from '@/_data/tsx/Timelines';
-import Swiper from '@/components/Swiper/Swiper';
+import Swiper from '@/components/ui/Swiper/Swiper';
 import Image from 'next/image';
 import { Certifications } from '@/_data/tsx/Certif';
 import { SplideSlide } from '@splidejs/react-splide';

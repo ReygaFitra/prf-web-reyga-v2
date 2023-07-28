@@ -1,9 +1,9 @@
-import Frame from '@/components/Frame/Frame';
-import TitleSection from '@/components/Title/TitleSection';
+import Frame from '@/components/ui/Frame/Frame';
+import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Button, Flex, Grid, GridItem, Text, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import { Projects } from '@/_data/tsx/Projects';
-import { HorizontalDivider } from '@/components/Divider/CustomDivider';
+import { HorizontalDivider } from '@/components/ui/Divider/CustomDivider';
 import { File, Link, MonitorPlay } from 'lucide-react';
 
 const ProjectsFragment = () => {

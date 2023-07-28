@@ -1,9 +1,9 @@
 'use client';
 import './globals.css';
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import Navigation from '@/components/Navigation/Navigation';
-import Footer from '@/components/Footer/Footer';
-import RootContainer from '@/components/RootContainer/RootContainer';
+import { Box, ChakraProvider, ColorModeScript } from '@chakra-ui/react';
+import Navigation from '@/components/ui/Navigation/Navigation';
+import Footer from '@/components/ui/Footer/Footer';
+import RootContainer from '@/components/ui/RootContainer/RootContainer';
 import { Theme } from '@/lib/Theme';
 
 export const metadata = {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
           <RootContainer fontFamily="changa">
             <Navigation />
-            {children}
+            <Box px="125px">{children}</Box>
             <Footer />
           </RootContainer>
         </ChakraProvider>

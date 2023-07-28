@@ -1,4 +1,4 @@
-import TitleSection from '@/components/Title/TitleSection';
+import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import Bio from '@/_data/json/Bio.json';
 

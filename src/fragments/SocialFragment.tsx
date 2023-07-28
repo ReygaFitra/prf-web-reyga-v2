@@ -1,8 +1,8 @@
 import { Flex, Box, Text, useColorModeValue } from '@chakra-ui/react';
-import FooterLink from '@/components/Footer/FooterLink';
-import TitleSection from '@/components/Title/TitleSection';
-import ContactForm from '@/components/ContactForm/ContactForm';
-import Frame from '@/components/Frame/Frame';
+import FooterLink from '@/components/ui/Footer/FooterLink';
+import TitleSection from '@/components/ui/Title/TitleSection';
+import ContactForm from '@/components/ui/ContactForm/ContactForm';
+import Frame from '@/components/ui/Frame/Frame';
 import { Socials } from '@/_data/tsx/Socials';
 
 const SocialFragment = () => {

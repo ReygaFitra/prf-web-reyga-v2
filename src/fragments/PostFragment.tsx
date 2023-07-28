@@ -1,5 +1,5 @@
-import Frame from '@/components/Frame/Frame';
-import TitleSection from '@/components/Title/TitleSection';
+import Frame from '@/components/ui/Frame/Frame';
+import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import Project3 from '@/assets/img/projects/project3.jpg';
