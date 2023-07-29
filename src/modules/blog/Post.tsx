@@ -4,7 +4,7 @@ import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import Project3 from '@/assets/img/projects/project3.jpg';
 
-const PostFragment = () => {
+const Post = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
   const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
   const baseColor = useColorModeValue('base.light', 'base.dark');
@@ -43,4 +43,4 @@ const PostFragment = () => {
   );
 };
 
-export default PostFragment;
+export default Post;

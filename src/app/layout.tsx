@@ -19,7 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
           <RootContainer fontFamily="changa">
             <Navigation />
-            <Box px="125px">{children}</Box>
+            <Box as="main" px="125px">
+              {children}
+            </Box>
             <Footer />
           </RootContainer>
         </ChakraProvider>

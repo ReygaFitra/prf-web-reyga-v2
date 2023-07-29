@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { TechStacks, Stacks } from '@/_data/tsx/TechStacks';
 import TitleSection from '@/components/ui/Title/TitleSection';
 
-const TechStackFragment = () => {
+const TechStack = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const handleTabChange = (index: number) => {
@@ -51,4 +51,4 @@ const TechStackFragment = () => {
   );
 };
 
-export default TechStackFragment;
+export default TechStack;

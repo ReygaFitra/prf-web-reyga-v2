@@ -1,5 +1,6 @@
 'use client';
-import ProjectsFragment from '@/fragments/ProjectsFragment';
+
+import Project from '@/modules/projects/Project';
 import { Box } from '@chakra-ui/react';
 
 export const metadata = {
@@ -10,7 +11,9 @@ export const metadata = {
 export default function Projects() {
   return (
     <Box>
-      <ProjectsFragment />
+      <section>
+        <Project />
+      </section>
     </Box>
   );
 }

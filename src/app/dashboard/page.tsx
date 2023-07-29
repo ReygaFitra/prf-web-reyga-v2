@@ -1,5 +1,7 @@
 'use client';
-import DashboardFragment from '@/fragments/DashboardFragment';
+
+import Music from '@/modules/dashboard/Music';
+import ViewStats from '@/modules/dashboard/ViewStats';
 import { Box } from '@chakra-ui/react';
 
 export const metadata = {
@@ -10,7 +12,13 @@ export const metadata = {
 export default function Dashboard() {
   return (
     <Box>
-      <DashboardFragment />
+      <section>
+        <ViewStats />
+      </section>
+      <br />
+      <section>
+        <Music />
+      </section>
     </Box>
   );
 }

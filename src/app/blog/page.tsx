@@ -1,5 +1,6 @@
 'use client';
-import PostFragment from '@/fragments/PostFragment';
+
+import Post from '@/modules/blog/Post';
 import { Box } from '@chakra-ui/react';
 
 export const metadata = {
@@ -10,7 +11,9 @@ export const metadata = {
 export default function Blog() {
   return (
     <Box>
-      <PostFragment />
+      <section>
+        <Post />
+      </section>
     </Box>
   );
 }

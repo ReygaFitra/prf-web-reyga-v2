@@ -2,7 +2,7 @@ import TitleSection from '@/components/ui/Title/TitleSection';
 import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 import Bio from '@/_data/json/Bio.json';
 
-const BioFragment = () => {
+const BioModule = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
   const tertiaryColor = useColorModeValue('tertiary.light', 'tertiary.dark');
   return (
@@ -21,4 +21,4 @@ const BioFragment = () => {
   );
 };
 
-export default BioFragment;
+export default BioModule;

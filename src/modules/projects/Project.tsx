@@ -6,7 +6,7 @@ import { Projects } from '@/_data/tsx/Projects';
 import { HorizontalDivider } from '@/components/ui/Divider/CustomDivider';
 import { File, Link, MonitorPlay } from 'lucide-react';
 
-const ProjectsFragment = () => {
+const Project = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
   const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
   const baseColor = useColorModeValue('base.light', 'base.dark');
@@ -48,4 +48,4 @@ const ProjectsFragment = () => {
   );
 };
 
-export default ProjectsFragment;
+export default Project;

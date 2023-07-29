@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Certifications } from '@/_data/tsx/Certif';
 import { SplideSlide } from '@splidejs/react-splide';
 
-const TimelineFragment = () => {
+const Timeline = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
 
   return (
@@ -33,4 +33,4 @@ const TimelineFragment = () => {
   );
 };
 
-export default TimelineFragment;
+export default Timeline;

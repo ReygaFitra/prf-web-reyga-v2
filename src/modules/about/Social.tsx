@@ -5,7 +5,7 @@ import ContactForm from '@/components/ui/ContactForm/ContactForm';
 import Frame from '@/components/ui/Frame/Frame';
 import { Socials } from '@/_data/tsx/Socials';
 
-const SocialFragment = () => {
+const Social = () => {
   const primaryColor = useColorModeValue('primary.light', 'primary.dark');
   const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
 
@@ -35,4 +35,4 @@ const SocialFragment = () => {
   );
 };
 
-export default SocialFragment;
+export default Social;
