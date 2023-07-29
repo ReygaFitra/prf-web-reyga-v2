@@ -1,11 +1,34 @@
 import { extendTheme, type ThemeConfig } from '@chakra-ui/react';
 
+export type MyTheme = {
+  primary: {
+    light: string;
+    dark: string;
+  };
+  secondary: {
+    light: string;
+    dark: string;
+  };
+  tertiary: {
+    light: string;
+    dark: string;
+  };
+  base: {
+    light: string;
+    dark: string;
+  };
+  neutral: {
+    light: string;
+    dark: string;
+  };
+};
+
 const config: ThemeConfig = {
   initialColorMode: 'system',
   useSystemColorMode: true,
 };
 
-const colors = {
+const colors: MyTheme = {
   primary: {
     light: '#0d21a1',
     dark: '#49a078',
