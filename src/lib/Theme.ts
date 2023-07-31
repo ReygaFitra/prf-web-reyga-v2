@@ -54,4 +54,12 @@ const colors: MyTheme = {
 export const Theme = extendTheme({
   config,
   colors,
+  styles: {
+    global: (props: any) => ({
+      body: {
+        transition: 'background-color 0.2s ease-in-out', // Menambahkan transisi pada latar belakang (background-color)
+        backgroundColor: props.colorMode === 'dark' ? colors.base.dark : colors.base.light,
+      },
+    }),
+  },
 });

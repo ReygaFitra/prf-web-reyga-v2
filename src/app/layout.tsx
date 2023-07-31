@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <ColorModeScript initialColorMode={Theme.config.initialColorMode} />
           <RootContainer fontFamily="changa">
             <Navigation />
-            <Box as="main" px="125px">
+            <Box as="main" px={{ base: '20px', md: '80px', lg: '125px' }}>
               {children}
             </Box>
             <Footer />

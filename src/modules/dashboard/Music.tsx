@@ -1,4 +1,5 @@
 import { Box, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+// import { TopTracks } from '@/app/api/spotify/route';
 
 const Music = () => {
   const secondaryColor = useColorModeValue('secondary.light', 'secondary.dark');
@@ -16,19 +17,24 @@ const Music = () => {
         <Heading size="md" fontFamily="changa">
           Top Tracks
         </Heading>
-        <Text px="10px" py="25px">
+        {/* {TopTracks.map((track: any) => (
+          <Text key={track.id} color={tertiaryColor} px="10px" py="25px">
+            {track.name}
+          </Text>
+        ))} */}
+        <Text px="10px" py="25px" color={tertiaryColor}>
           Music List
         </Text>
         <hr />
-        <Text px="10px" py="25px">
+        <Text px="10px" py="25px" color={tertiaryColor}>
           Music List
         </Text>
         <hr />
-        <Text px="10px" py="25px">
+        <Text px="10px" py="25px" color={tertiaryColor}>
           Music List
         </Text>
         <hr />
-        <Text px="10px" py="25px">
+        <Text px="10px" py="25px" color={tertiaryColor}>
           Music List
         </Text>
         <hr />

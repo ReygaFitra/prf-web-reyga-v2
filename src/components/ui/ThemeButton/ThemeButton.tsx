@@ -1,17 +1,17 @@
 import { Button, useColorMode } from '@chakra-ui/react';
 
 type ThemeButton = {
-  sunIcon: any;
-  moonIcon: any;
+  dark: any;
+  light: any;
 };
 
 const ThemeButton = (props: ThemeButton) => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const { sunIcon, moonIcon } = props;
+  const { dark, light } = props;
 
   return (
-    <Button onClick={toggleColorMode} rounded="sm">
-      {colorMode === 'light' ? sunIcon : moonIcon}
+    <Button onClick={toggleColorMode} rounded="sm" size="md">
+      {colorMode === 'light' ? dark : light}
     </Button>
   );
 };
