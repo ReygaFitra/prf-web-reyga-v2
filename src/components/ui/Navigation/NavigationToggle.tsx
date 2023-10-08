@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Text, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, Text, VStack, useColorModeValue, useDisclosure } from '@chakra-ui/react';
 import { MenuIcon } from 'lucide-react';
 import NavigationLink from './NavigationLink';
 import NavLinks from '@/_data/json/NavLinks.json';
@@ -13,11 +13,16 @@ const NavigationToggle = () => {
   const handleCLick = () => {
     onOpen();
   };
+  const handleCLickLinks = () => {
+    onClose();
+  };
+
+  const isDarkMode = useColorModeValue(true, false);
 
   return (
     <Box>
-      <Button rounded="sm" onClick={handleCLick}>
-        <MenuIcon size="30px" />
+      <Button rounded="md" onClick={handleCLick} size="md">
+        <MenuIcon size="25px" color={isDarkMode ? '#0d21a1' : '#49a078'} />
       </Button>
       <Drawer onClose={onClose} isOpen={isOpen} size="full" placement="top">
         <DrawerOverlay />
@@ -27,10 +32,15 @@ const NavigationToggle = () => {
             <Box my="50px">
               <VStack p="30px">
                 <NavigationHeading headingSize="md" href="/" title="Home" headingColor={inactiveColor} activeColor={activeColor} />
-                <Divider orientation="horizontal" height="25px" />
                 {NavLinks.map((link) => {
-                  return <NavigationLink key={link.id} title={link.title} href={link.href} linkColor={inactiveColor} activeColor={activeColor} dividerOrientation="horizontal" dividerHeight={link.dividerHeight} />;
+                  return (
+                    <Button onClick={handleCLickLinks} key={link.id} variant="unstyled" width="100%" my="10px">
+                      <NavigationLink title={link.title} href={link.href} linkColor={inactiveColor} activeColor={activeColor} paddingY="20px" />
+                    </Button>
+                  );
                 })}
+              </VStack>
+              <VStack>
                 <ThemeButton dark={<Text color="#0d21a1">Dark Mode</Text>} light={<Text color="#49a078">Light Mode</Text>} />
               </VStack>
             </Box>

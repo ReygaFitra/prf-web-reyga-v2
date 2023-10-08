@@ -28,15 +28,15 @@ const TechStack = () => {
         </TabList>
         <TabIndicator mt="-1.5px" height="2px" bg={primaryColor} borderRadius="1px" />
 
-        <TabPanels bgColor={secondaryColor} my="10px" borderRadius="md" p="15px" minH="60vh">
+        <TabPanels bgColor={secondaryColor} my="10px" borderRadius="md" p={{ base: '1px', md: '15px' }} minH={{ base: '40vh', md: '45vh', lg: '60vh' }}>
           {TechStacks.map((panel) => (
             <TabPanel key={panel.id} color={tertiaryColor}>
-              <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+              <Grid templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(3, 1fr)', lg: 'repeat(4, 1fr)' }} gap={{ base: 3, md: 5 }}>
                 {panel.panelData.map((data) => (
                   <GridItem key={data.id}>
-                    <HStack p="20px" rounded="sm" _hover={{ cursor: 'pointer', transition: '.5s', color: baseColor, bgColor: 'rgba(255, 255, 255, 0.2)' }}>
+                    <HStack p={{ base: '7px', md: '10px' }} rounded="sm" _hover={{ cursor: 'pointer', transition: '.5s', color: baseColor, bgColor: 'rgba(255, 255, 255, 0.2)' }}>
                       <data.icon />
-                      <Heading size="lg" fontFamily="Changa" fontWeight="light">
+                      <Heading size={{ base: 'sm', md: 'md' }} fontFamily="Changa" fontWeight="light">
                         {data.name}
                       </Heading>
                     </HStack>

@@ -19,7 +19,7 @@ const Project = () => {
   return (
     <>
       <TitleSection width="140px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Projects" />
-      <Grid gridTemplateColumns="repeat(3, 1fr)" my="20px" gap={7}>
+      <Grid gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(3, 1fr)' }} my="20px" gap={7}>
         {Projects.map((project, index) => (
           <GridItem key={index}>
             <Frame bgColor={secondaryColor} maxW="100%" minH="330px" boxShadow={{ shadow: '13px 13px', color: boxShadowColor }} overflow="hidden" p="5px" rounded="sm">

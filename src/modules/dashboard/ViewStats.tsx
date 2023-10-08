@@ -9,15 +9,15 @@ const ViewStats = () => {
   return (
     <>
       <TitleSection width="180px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Dashboard" />
-      <Flex justifyContent="center" my="20px" gap={3}>
+      <Flex justifyContent="center" my="20px" gap={3} flexDir={{ base: 'column', md: 'row' }}>
         <Box bgColor={secondaryColor} w="100%" h="100px" rounded="md" color={tertiaryColor} p="20px">
-          <Heading size="md" fontFamily="changa">
+          <Heading size={{ base: 'sm', md: 'md' }} fontFamily="changa">
             Coding Hours
           </Heading>
           <Text>---</Text>
         </Box>
         <Box bgColor={secondaryColor} w="100%" h="100px" rounded="md" color={tertiaryColor} p="20px">
-          <Heading size="md" fontFamily="changa">
+          <Heading size={{ base: 'sm', md: 'md' }} fontFamily="changa">
             All Time Views
           </Heading>
           <Text>---</Text>

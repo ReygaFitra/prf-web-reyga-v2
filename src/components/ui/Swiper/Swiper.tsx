@@ -17,7 +17,7 @@ const Swiper = (props: Swiper) => {
 
   const { children } = props;
   return (
-    <Container minW="xl">
+    <Container minW={{ base: 'xs', md: 'xl' }}>
       <Frame w="full" minH="3em" bgColor={secondaryColor} p="1rem" rounded="none" boxShadow={{ shadow: '15px 15px', color: boxShadowColor }} overflow="hidden">
         <Splide
           options={{

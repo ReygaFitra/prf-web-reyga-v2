@@ -17,7 +17,7 @@ const Social = () => {
   return (
     <>
       <TitleSection width="200px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Get in Touch" />
-      <Flex justifyContent="space-between">
+      <Box display="flex" flexDir={{ base: 'column', lg: 'row' }} justifyContent="space-between">
         <Box my="20px" w="280px">
           <Text fontStyle={'italic'} color={secondaryColor} my="10px">
             You can contact me via Socials Bellow :
@@ -35,7 +35,7 @@ const Social = () => {
         <Box>
           <ContactForm />
         </Box>
-      </Flex>
+      </Box>
     </>
   );
 };

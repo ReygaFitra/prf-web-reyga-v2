@@ -36,7 +36,7 @@ const Navigation = () => {
 
       {isMobile ? (
         <Box pos="sticky" top={0} zIndex={20} bgColor={navigationColor} px="20px">
-          <Box display="flex" justifyContent="end" my="20px">
+          <Box display="flex" justifyContent="end" my="10px">
             <NavigationToggle />
           </Box>
         </Box>

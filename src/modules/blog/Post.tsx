@@ -1,6 +1,6 @@
 import Frame from '@/components/ui/Frame/Frame';
 import TitleSection from '@/components/ui/Title/TitleSection';
-import { Box, Heading, Text, useColorMode, useColorModeValue } from '@chakra-ui/react';
+import { Box, Heading, Text, useBreakpointValue, useColorMode, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import Project3 from '@/assets/img/projects/project3.jpg';
 import { Theme } from '@/lib/Theme';
@@ -13,13 +13,18 @@ const Post = () => {
   const { colorMode } = useColorMode();
   const isDarkMode = colorMode === 'dark';
   const boxShadowColor = isDarkMode ? Theme.colors.primary.dark : Theme.colors.primary.light;
+  const isMobile = useBreakpointValue({
+    base: true,
+    md: false,
+    lg: false,
+  });
 
   return (
     <>
       <TitleSection width="100px" headingSize="lg" headingColor={primaryColor} headingFont="Changa" name="Blog" />
-      <Box w="100%" h="450px" my="20px" mb="50px" color={baseColor}>
+      <Box w="100%" h={isMobile ? '390px' : '450px'} my="20px" mb="50px" color={baseColor}>
         <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow={{ shadow: '15px 15px', color: boxShadowColor }} overflow="hidden" rounded="sm">
-          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
+          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', height: isMobile ? '240px' : '290px' }} />
           <Box p="15px">
             <Heading size="lg" fontFamily="changa">
               Post 1
@@ -31,9 +36,9 @@ const Post = () => {
           </Box>
         </Frame>
       </Box>
-      <Box w="100%" h="450px" my="20px" mb="50px" color={baseColor}>
+      <Box w="100%" h={isMobile ? '390px' : '450px'} my="20px" mb="50px" color={baseColor}>
         <Frame bgColor={secondaryColor} maxW="100%" h="100%" boxShadow={{ shadow: '15px 15px', color: boxShadowColor }} overflow="hidden" rounded="sm">
-          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', maxHeight: '300px' }} />
+          <Image priority={true} src={Project3} alt="example" quality={100} style={{ objectFit: 'cover', width: '100%', height: isMobile ? '240px' : '290px' }} />
           <Box p="15px">
             <Heading size="lg" fontFamily="changa">
               Post 1
